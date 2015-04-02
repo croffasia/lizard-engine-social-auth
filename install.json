@@ -1,0 +1,10 @@
+{
+  "AfterInstallText": "Плагин LizardEngine для авторизации через социальные сети успешно установлен! Полный список поддерживаемых сетей вы найдете здесь http://passportjs.org/guide/",
+
+  "dependencies" : {
+    "passport": "^0.2.1",
+    "passport-facebook": "^2.0.0",
+    "passport-github": "^0.1.5",
+    "passport-vkontakte": "^0.3.0"
+  }
+}
