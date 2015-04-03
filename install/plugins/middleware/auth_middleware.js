@@ -47,6 +47,15 @@ module.exports = function(app)
         }
     }
 
+    app.get(config.logout_url, function(req, res){
+        req.logout();
+
+        delete res.locals.user;
+        delete req.session.user;
+
+        res.redirect('/');
+    });
+
     app.use(function(req, res, next){
         res.locals.user = req.session.user;
         next();
